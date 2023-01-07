@@ -1,0 +1,587 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600,700,800);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot');
+	src:url('https://jlalovi-cv.herokuapp.com/font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.ttf') format('truetype'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.woff') format('woff'),
+		url('https://jlalovi-cv.herokuapp.com/font/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-cloudy:before {
+	content: "\e60f";
+}
+.icon-sun:before {
+	content: "\e610";
+}
+.icon-cloudy2:before {
+	content: "\e611";
+}
+/************************************* END FONTS *************************************/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+
+
+
+.navbar {
+    position: relative;
+    background: black;
+}
+.nav_body{
+
+}
+#navlist {
+   list-style: none;
+   display: flex;
+   padding-left: 8em;
+   margin: 0;
+   background: black;
+}
+
+#navlist li {
+  flex: auto;
+  text-align: center;
+  /* padding: 0.75em;*/
+  margin-right: 2em;
+  font-size: 12px;
+  color: white;
+}
+#navlist a{
+    color:white;
+    text-underline-offset: none;
+}
+.banner{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+.banner_title{
+    text-align:center;
+    font-size: 65px;
+    font-weight: bolder;
+}
+
+#banner-list{
+    list-style: none;
+   display: flex;
+   padding-left: 3em;
+   margin-left: 26em;
+   margin-right: 30em;
+   color: white;
+}
+#banner-list li {
+    flex: auto;
+    text-align: center;
+    /* padding: 0.75em;*/
+    margin-right: 1em;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+#banner-list a{
+    color:black;
+}
+
+.banner-img{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.burohappold.com/wp-content/uploads/2020/02/experts-in-tall-buildings-burohappold_getty.jpg);
+    padding: 10em;
+}
+.banner-img h1, h3{
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+.cards_list{
+    display:inline-block;
+     margin-left:10em;
+    float:left;
+    width:800px;
+}
+
+.main-news{
+    margin-left: 13em;
+    text-align: center;
+    float:left;
+    width: 800px;
+}
+
+.main-news img{
+    width:800px;
+}
+.main-news p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size:larger;
+}
+figure.snip1208 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #fff;
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+}
+figure.snip1208 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+figure.snip1208 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+figure.snip1208 figcaption {
+  padding: 25px;
+  position: relative;
+}
+figure.snip1208 .date,
+figure.snip1208 i {
+  background-color: #1abc9c;
+  /* #1abc9c */
+  top: 25px;
+  color: #fff;
+  left: 25px;
+  min-height: 60px;
+  min-width: 60px;
+  position: absolute;
+  text-align: center;
+}
+figure.snip1208 .date {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+figure.snip1208 .date span {
+  display: block;
+  line-height: 30px;
+}
+figure.snip1208 .date .month {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure.snip1208 i {
+  line-height: 60px;
+  font-size: 30px;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208 h3,
+figure.snip1208 p {
+  margin: 0;
+  padding: 0;
+}
+figure.snip1208 h3 {
+  margin-bottom: 10px;
+  text-align: left;
+  /* display: inline-block; */
+  font-weight: 600;
+  font-size: 25px;
+  color: #333333;
+  /* text-transform: uppercase; */
+}
+figure.snip1208 p {
+  font-size: 0.8em;
+  margin-bottom: 20px;
+  line-height: 1.6em;
+}
+figure.snip1208 button {
+  border: medium none;
+  padding: 10px 20px;
+  background-color: rgb(211, 203, 203);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+/* figure.snip1208 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+} */
+figure.snip1208:hover img,
+figure.snip1208.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip1208:hover .date,
+figure.snip1208.hover .date {
+  -webkit-transform: rotateY(90deg);
+  transform: rotateY(90deg);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip1208:hover i,
+figure.snip1208.hover i {
+  -webkit-transform: rotateY(0);
+  transform: rotateY(0);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1208:hover button,
+figure.snip1208.hover button {
+  background-color: #117964;
+}
+
+.news_card{
+    display:inline-block;
+    align-items: center;
+}
+
+/********************************************* RIGHT CONTAINER ****************************************/
+.input-container {
+	position: relative;
+}
+	input[type=text]{
+		width: 260px;
+		height: 50px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		padding-left: 45px;
+        background: white;
+		/* background: #50597b; */
+		color: rgb(12, 11, 11);
+        border: 1px solid rgb(254, 252, 252) ;
+		/* border: solid 1px #1f253d; */
+		border-radius: 5px;		
+	}
+		input[type=text]::-webkit-input-placeholder { /* WebKit browsers */
+            color:#b0aeae;
+	   		/* color: #fff;	   		 */
+	   	}
+		input[type=text]:-moz-input-placeholder { /* Mozilla Firefox 4 to 18 */
+	   		color: black;	   
+	   	}
+		input[type=text]::-moz-input-placeholder { /* Mozilla Firefox 19+ */
+            color:black;
+	   		/* color: #fff; */
+	   	}
+		input[type=text]:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: black;
+	   		/* color: #fff;	 */  	
+	   	} 
+	   	input[type=text]:focus {
+	   		outline: none; /* removes the default orange border when focus */
+	   		border: 1px solid rgb(16, 15, 15) ;
+            /* #11a8ab */
+	   	}
+	.input-icon {
+		font-size: 22px;
+		position: absolute;
+		left: 31px;
+		top: 10px;
+	}
+		.input-icon.password-icon {
+			left: 35px;
+		}
+
+        .icon {
+            font-size: 25px;
+        }
+        
+        .titular {
+            display: block;
+            line-height: 60px;
+            margin: 0;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        
+        .button {
+            display: block;
+            width: 175px;
+            line-height: 50px;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 5px;
+            -webkit-transition: background .3s;
+            transition: background .3s;
+        }
+            .button:hover {
+                text-decoration: none;
+            }
+
+            .arrow-btn-container {
+                position: relative;
+            }
+                .arrow-btn {
+                    position: absolute;
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    -webkit-transition: background .3s;
+                    transition: background .3s;
+                }
+                    .arrow-btn:hover {
+                        text-decoration: none;
+                    }
+                    .arrow-btn.left {
+                        border-top-left-radius: 5px;
+                    }
+                    .arrow-btn.right {
+                        border-top-right-radius: 5px;
+                        right: 0;
+                        top: 0;
+                    }
+                    .arrow-btn .icon {
+                        display: block;
+                        font-size: 18px;
+                        border: 2px solid #fff;
+                        border-radius: 100%;
+                        line-height: 17px;
+                        width: 21px;
+                        margin: 20px auto;
+                        text-align: center;
+                    }
+                        .arrow-btn.left .icon {
+                            padding-right: 2px;
+                        }
+
+/*CONTAINER*/
+.container {
+    margin-top: 3em;
+    float: right;
+    width: 300px;
+}
+    .block {
+        margin-bottom: 50px;
+        background: rgb(239, 236, 236);
+        border-radius: 8px;
+    }
+
+
+
+ .right-container {
+    background-color: white;
+ }
+.join-newsletter {
+    height: 230px;
+}
+    .join-newsletter .titular {
+        /* padding-top: 10px; */
+        color:black;
+        font-size: 1.5em;
+    }
+    .subscribe.button {
+        background:#1abc9c;
+        /* background: #11a8ab; */
+        margin-top: 4px;
+        color:#1505f8;
+    }
+        .subscribe.button:hover {
+            background: #11a8ab;
+        }
+.account {
+    height: 390px;
+}
+    .account .titular {
+        /* padding: 10px 0;*/
+        /* margin-top: 10px; */
+        color: black; 
+        font-size: 1.5em;
+    }
+    .sign-in.button {
+        background: #e64c65;
+        margin: 10px auto;
+        color:#1505f8;
+    }
+        .sign-in.button:hover {
+            background: #cc324b;
+        }
+    .account p { 
+        text-align: center;
+    }
+    .fb-sign-in {
+        margin-top: 28px;
+        display: block;
+        line-height: 50px;
+        background: white;
+        /* #3468af */
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        -webkit-transition: background .3s;
+        transition: background .3s;
+    }
+        .fb-sign-in:hover {
+            background: #1a4e95;
+            /* #1a4e95 */
+            text-decoration: none;
+        }
+    .fb-sign-in .icon {	
+        line-height: 20px;
+        font-size: 12px;
+        padding-right: 3px;
+    }
+    .fb-sign-in p:hover{
+        background-color: #1a4e95;
+    }
+        .fb-border {
+            display: inline-block;
+            width: 23px;
+            line-height: 20px;
+            border: 2px solid #fff;
+            border-radius: 100%;
+            margin-right: 10px;
+        }
+.loading {
+    margin-top: 10px;
+    height: 200px;
+    padding-top: 35px;
+}
+    .loading p {
+        display: inline-block;
+        padding-left: 30px;
+        margin: 5px 0 20px;
+    }
+        .loading .icon {
+            padding-right: 15px;
+        }
+        .loading .percentage {
+            float: right;
+            padding: 6px 35px 0 0;
+        }
+    .loading .progress-bar {
+        width: 250px;
+        height: 20px;
+        background: #50597b;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+        .progress-bar.downloading {
+            margin-top:10px;
+            background: -webkit-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* Chrome10+,Safari5.1+ */
+             background: -ms-linear-gradient(left, #11a8ab 81%,#50597b 81%); /* IE10+ */
+            background: linear-gradient(to right, #11a8ab 81%,#50597b 81%); /* W3C */
+        }
+        .progress-bar.uploading {
+            background: -webkit-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* Chrome10+,Safari5.1+ */
+            background: -ms-linear-gradient(left, #4fc4f6 43%,#50597b 43%); /* IE10+ */
+            background: linear-gradient(to right, #4fc4f6 43%,#50597b 43%); /* W3C */
+        }
+.calendar-day {
+    height: 320px;
+    background: #c7c9cb;
+}
+    .calendar-day .titular {
+        background: #1a4e95;
+    }
+        .calendar-day .arrow-btn:hover {
+            background: #16417E;
+        }
+    .calendar-day .the-day {
+        margin: 0;
+        text-align: center;
+        font-size: 146px;
+    }
+    .add-event.button {
+        background: #4fc4f6;
+    }
+        .add-event.button:hover {
+            background: #35aadc;
+        }
+.calendar-month {
+    height: 380px;
+}
+    .calendar-month .titular {
+        background: #3468af;
+        font-size: 20px;
+    }
+        .calendar-month .arrow-btn:hover {
+            background: #1a4e95;
+        }
+    .calendar {
+        margin: 22px 15px;
+        text-align: center;
+    }
+        .calendar a {
+            font-size: 17px;
+        }
+        .calendar td, .calendar th {
+            width: 40px;
+            height: 38px;						
+        }
+        .calendar .days-week {
+            color: #4fc4f6;
+        }
+        .calendar .today {
+            display: block;
+            width: 34px;
+            line-height: 34px;
+            background: #e64c65;
+            border-radius: 100%;
+        }
+
+        footer{
+            background-color: #333;
+            overflow: hidden;
+            /* position: fixed; */
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+        footer a{
+            text-decoration: none;
+            font-size: 15px;
+            padding-left: 20px;
+            margin-top: 10px;
+            text-align: center;
+            float: left;
+            color:cyan;
+        }
